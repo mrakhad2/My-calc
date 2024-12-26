@@ -3,78 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spoon</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="head-block">
-    <header class="header">
-        <div class="logo">
-            <img class="logo-img" src="logo 1 (Traced).png" alt="">
-        </div>
-        <div class="texts">
-            <img src="Menu.png" alt="" class="texts-logo">  
-            <p class="texts-text">О компании</p>
-            <p class="texts-text text-1">Каталог</p>
-            <p class="texts-text">Акции </p>
-            <p class="texts-text text-1">Услуги</p>
-            <p class="texts-text">Контакты</p>
-            <img src="Icon.png" alt="" class="texts-logo">
-        </div>
-        <div class="button">
-            <button class="button-btn-1"><img src="Icom.png" alt=""></button>
-            <button class="button-btn-1"><img src="savat.png" alt=""></button>
-            <button class="button-btn">Конструктор <img style="margin-bottom: -4px;" src="in-in.png" alt=""></button>
-
-        </div>
-    </header>
-    <div class="header-main">
-        <img src="interactive.png" alt="" class="header-main-img">
-        <div class="header-main-div">
-            <h1 class="main-title">
-                Планируете сделать <span> принт? </span>
-                Вы пришли по адресу
-            </h1>
-            <p class="main-text">Reklem - только оптовая работа высокого качества с индивидуальным подходом. Работаем с 2008 года.</p>
-            <button class="main-btn">Перейти в каталог</button>
-        </div>
-    </div>
-    </div>
     
-    <section class="container">
-        <div class="ong-texts">
-            <h1 class="ong-texts-title">Пара слов о нас,
-                производстве
-                и брендинге</h1>
-                <p class="ong-texts-text">В своём стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности структуры проекта.</p>
-                <p class="ong-texts-text">В своём стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности структуры проекта опыт мы упускаем, что ключевые особенности структуры проекта.</p>
-                <button class="ong-texts-btn">О компании</button>
+    <div class="header">
+        <h1>
+          <div class="newYear">New Year</div>
+          <div class="title">coming in</div>
+        </h1>
+        <h2 class="countdown">
+          <div id="countdown-days">0d</div>
+          <div id="countdown-hours">0h</div>
+          <div id="countdown-minutes">0m</div>
+          <div id="countdown-seconds">0s</div>
+        </h2>
+      </div>
+      
+      <div class="mailbox">
+        <div class="basis"></div>
+        <div class="box">
+          <div class="letters">
+            <div class="letter letter-second">
+              <img class="letter-image" src="https://img.freepik.com/premium-vector/christmas-mail-postcard-hand-drawn-illustration_514781-2114.jpg" />
+            </div>
+            <div class="letter letter-first">
+              <img class="letter-image" src="https://www.shutterstock.com/image-vector/christmas-new-year-postcard-wish-260nw-761840683.jpg" />
+            </div>
+          </div>
+          <div class="box-title">
+            <div class="font-sans-serif">letters from</div>
+            <div class="font-script">Santa</div>
+            <div class="font-sans-serif">for</div>
+            <div class="font-script">you</div>
+          </div>
         </div>
-        <div class="chap-img">
-            <img src="images.png" alt="" class="chap-img-img">
+      </div>
+      <div class="winter-wrapper" id="winter-wrapper"></div>
+      <div class="ground"></div>
+      
+      <dialog class="mail" id="mail">
+        <div class="mail-inner">
+          <button class="mail-close" autofocus id="mailClose">X</button>
+          <p class="mail-title">Ho ho ho!</p>
+          <p id="mailContent">Sizga quvonchli Yangi yil! Bu fasl sizga dunyodagi barcha yaxshiliklarni eslatib tursin - bolalarning kulgisi, begonalarning mehribonligi va har bir yurakdagi umid. Va unutmangki, eng katta sovg'alar daraxt ostida emas - ular biz birgalikda yaratgan xotiralardir.</p>
+          <p>
+          <div id="mailSign">Stay magical,</div>
+          <div><span class="font-script">Santa</span> 🎅</div>
+          </p>
         </div>
-    </section>
+      </dialog>
+      <button class="mailbox-shadow" id="mailbox"></button>
 
-    <section class="grid">
-        <div class="grid-div"><img src="Cloud-check.png" alt="" class="grid-div-img">
-            <h3 class="grid-div-title">Онлайн конструктор</h3>
-            <p class="grid-div-text">С конструктором создавайте свои уникальные дизайны</p>
-        </div>
-        <div class="grid-div"><img src="Cloud-check.png" alt="" class="grid-div-img">
-            <h3 class="grid-div-title">Принт за 24 часа</h3>
-            <p class="grid-div-text">Некоторые заказы можем произвести быстрее суток</p>
-        </div>
-        <div class="grid-div"><img src="Cloud-check.png" alt="" class="grid-div-img">
-            <h3 class="grid-div-title">Быстрая доставка</h3>
-            <p class="grid-div-text">Сотрудничаем с быстрыми и надежными службами</p>
-        </div>
-        <div class="grid-div"><img src="Cloud-check.png" alt="" class="grid-div-img">
-            <h3 class="grid-div-title">Только ОПТ</h3>
-            <p class="grid-div-text">Работаем на большие объемы брендинга</p>
-        </div>
 
 
-    </section>
 
+    <script src="app.js" ></script>
+
+    
 </body>
 </html>
